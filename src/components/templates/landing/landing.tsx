@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 import { TiTick } from 'react-icons/ti';
-import QuickSearch from '../QuickSearch/QuickSearch';
-import ReviewRating from '../ReviewRating/ReviewRating';
+import QuickSearch from './QuickSearch/QuickSearch';
+import ReviewRating from './ReviewRating/ReviewRating';
 
 export default function Landing() {
   return (
