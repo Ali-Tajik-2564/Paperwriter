@@ -14,8 +14,20 @@ import { Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
 export default function ReviewSection() {
   return (
-    <div className="w-full flex items-center justify-center my-32">
-      <div className="w-5/6 h-auto mx-auto flex items-center justify-center">
+    <div className="w-full flex flex-col items-start justify-between my-14 ">
+      <div className="w-full h-auto flex flex-col items-center justify-between my-16 space-y-1">
+        <span className="text-3xl font-medium tracking-wide">
+          Meet Our Experienced And Professional Paper Writers
+        </span>
+        <span className="text-black/60 text-base  text-center">
+          Every writer on our team is truly committed to crafting flawless
+          papers. Check out their profiles to hire
+        </span>
+        <span className="text-black/60 text-base  text-center">
+          the one that best suits your needs
+        </span>
+      </div>
+      <div className="w-5/6 h-auto mx-auto flex items-center justify-center ">
         <div className="swiper-button-custom-prev   z-10 ml-24   text-black/50   border border-black/50  w-10 h-10 rounded-full flex items-center justify-center group  hover:border-(--them-color) ">
           <IoIosArrowBack className="w-6 h-6 group-hover:fill-(--them-color)" />
         </div>
@@ -27,31 +39,15 @@ export default function ReviewSection() {
           loop={true}
           modules={[Pagination, Navigation]}
           className="mySwiper  w-4/6 h-auto flex items-center justify-between   ">
-          <SwiperSlide>
+          <SwiperSlide className="p-12">
             <ReviewBox />
           </SwiperSlide>
-          <SwiperSlide>
+
+          <SwiperSlide className="p-12">
             <ReviewBox />
           </SwiperSlide>
-          <SwiperSlide>
-            <ReviewBox />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ReviewBox />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ReviewBox />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ReviewBox />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ReviewBox />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ReviewBox />
-          </SwiperSlide>
-          <SwiperSlide>
+
+          <SwiperSlide className="p-12">
             <ReviewBox />
           </SwiperSlide>
         </Swiper>

@@ -6,7 +6,7 @@ import ReviewRating from './ReviewRating/ReviewRating';
 
 export default function Landing() {
   return (
-    <div className="w-full h-auto flex flex-col items-start justify-between">
+    <div className="w-full h-auto flex flex-col items-start justify-between bg-(--border-color)/30 py-6">
       <div className="w-full h-auto   p-10 flex items-start justify-between">
         <div className="w-2/3 h-auto flex flex-col items-start justify-between space-y-6">
           <span className="text-3xl tracking-wide font-bold">
