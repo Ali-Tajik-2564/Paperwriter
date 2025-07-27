@@ -12,9 +12,10 @@ import 'swiper/css/navigation';
 // import required modules
 import { Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
+import Link from 'next/link';
 export default function ReviewSection() {
   return (
-    <div className="w-full flex flex-col items-start justify-between my-14 ">
+    <div className="w-full flex flex-col items-center justify-between my-14 ">
       <div className="w-full h-auto flex flex-col items-center justify-between my-16 space-y-1">
         <span className="text-3xl font-medium tracking-wide">
           Meet Our Experienced And Professional Paper Writers
@@ -55,6 +56,11 @@ export default function ReviewSection() {
           <IoIosArrowForward className="w-6 h-6 group-hover:fill-(--them-color)" />
         </div>
       </div>
+      <Link
+        href="./writer"
+        className="w-auto h-auto border-b text-base text-black/60 border-black/60 hover:text-(--them-color) hover:border-(--them-color) my-5 text-center">
+        View All Writers
+      </Link>
     </div>
   );
 }
