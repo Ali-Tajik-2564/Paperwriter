@@ -2,7 +2,7 @@
 import React from 'react';
 import { Swiper } from 'swiper/react';
 import { SwiperSlide } from 'swiper/react';
-import ReviewBox from '../ReviewBox/ReviewBox';
+import ReviewBox from '../WritersReviewBox/WritersReviewBox';
 import { IoIosArrowBack } from 'react-icons/io';
 import { IoIosArrowForward } from 'react-icons/io';
 // Import Swiper styles
@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 import { Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
 import Link from 'next/link';
-export default function ReviewSection() {
+export default function WritersReviewSection() {
   return (
     <div className="w-full flex flex-col items-center justify-between my-14 ">
       <div className="w-full h-auto flex flex-col items-center justify-between my-16 space-y-1">

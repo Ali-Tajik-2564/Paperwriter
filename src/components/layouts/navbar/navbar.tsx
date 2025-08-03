@@ -4,8 +4,8 @@ import { IoIosArrowUp } from 'react-icons/io';
 import Link from 'next/link';
 export default function Navbar() {
   return (
-    <div>
-      <div className="w-full h-auto mt-0 p-3 flex items-center justify-between  shadow-(--nav-shadow)">
+    <div className="sticky top-0 left-0 bg-white/90">
+      <div className="w-full h-auto  mt-0 p-3 flex items-center justify-between  shadow-(--nav-shadow)">
         <div className="logo w-auto h-auto ml-4 p-1">
           <Image src="./img/mpp-logo.svg" width={170} height={80} alt="logo" />
         </div>
