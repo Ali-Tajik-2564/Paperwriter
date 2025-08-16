@@ -45,6 +45,30 @@
     animation: pulseScaleFade 2s ease-in-out infinite;
     z-index: -1;
   }
+   .triangle::before,
+  .triangle::after {
+    content: "";
+    position: absolute;
+   
+    top: 0;
+    width: 0;
+    height: 0;
+      z-index: 50;
+    border-top: 16px solid transparent;
+    border-bottom: 50% solid transparent;
+  }
+
+  .triangle::before {
+    left: -16px;
+    
+   
+    border-right: 16px solid var(--primary-color); /* هم‌رنگ پس‌زمینه */
+  }
+
+  .triangle::after {
+    right: -16px;
+    border-left: 16px solid var(--primary-color); /* هم‌رنگ پس‌زمینه */
+  }
 
  
 }

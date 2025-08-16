@@ -2,11 +2,21 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { FaStar, FaStarHalf } from 'react-icons/fa6';
-
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+// import required modules
+import { Swiper } from 'swiper/react';
+import { SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
+import ReviewBox from './ReviewBox/ReviewBox';
 export default function ReviewSection() {
   const [ReviewsName, setReviewsName] = useState('');
   return (
-    <div className="w-full h-auto my-10 flex flex-col items-center justify-between p-6 space-y-10">
+    <div className="w-full h-auto my-24 flex flex-col items-center justify-between p-2 space-y-14 ">
       <div className="w-full flex flex-col items-center justify-between">
         <span className="text-2xl font-medium tracking-wide">
           Check Out Our Paper Writing Service Reviews
@@ -69,6 +79,36 @@ export default function ReviewSection() {
             <FaStar className="fill-green-900" />
             <FaStarHalf className="fill-green-900" />
           </div>
+        </div>
+      </div>
+      <div className="w-full h-auto  flex items-center justify-between   ">
+        <div className="swiper-button-custom-prev   z-10 ml-16   text-black/50   border border-black/50  w-10 h-10 rounded-full flex items-center justify-center group  hover:border-(--them-color) ">
+          <IoIosArrowBack className="w-6 h-6 group-hover:fill-(--them-color)" />
+        </div>
+        <Swiper
+          navigation={{
+            nextEl: '.swiper-button-custom-next',
+            prevEl: '.swiper-button-custom-prev',
+          }}
+          loop={true}
+          modules={[Pagination, Navigation]}
+          slidesPerView={2}
+          className="mySwiper  w-11/12 h-auto flex items-center justify-between   ">
+          <SwiperSlide className="p-8">
+            <ReviewBox commentSource={ReviewsName} />
+          </SwiperSlide>
+          <SwiperSlide className="p-8">
+            <ReviewBox commentSource={ReviewsName} />
+          </SwiperSlide>
+          <SwiperSlide className="p-8">
+            <ReviewBox commentSource={ReviewsName} />
+          </SwiperSlide>
+          <SwiperSlide className="p-8">
+            <ReviewBox commentSource={ReviewsName} />
+          </SwiperSlide>
+        </Swiper>
+        <div className="swiper-button-custom-next text-black/50 mr-16   border border-black/50 w-10 h-10 rounded-full flex items-center justify-center group hover:border-(--them-color)">
+          <IoIosArrowForward className="w-6 h-6 group-hover:fill-(--them-color)" />
         </div>
       </div>
     </div>

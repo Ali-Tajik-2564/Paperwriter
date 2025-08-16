@@ -4,7 +4,7 @@ import { IoIosArrowUp } from 'react-icons/io';
 import Link from 'next/link';
 export default function Navbar() {
   return (
-    <div className="sticky top-0 left-0 bg-white/90">
+    <div className="sticky top-0 left-0 bg-white/90 z-10">
       <div className="w-full h-auto  mt-0 p-3 flex items-center justify-between  shadow-(--nav-shadow)">
         <div className="logo w-auto h-auto ml-4 p-1">
           <Image src="./img/mpp-logo.svg" width={170} height={80} alt="logo" />
@@ -15,7 +15,7 @@ export default function Navbar() {
               {' '}
               <span className="group-hover:text-(--them-color)">Services</span>
               <IoIosArrowUp className="group-hover:rotate-180 group-hover:text-(--them-color) p-0 m-0" />{' '}
-              <div className="services-list w-[450px] h-auto bg-white border border-(--border-color) text-(--primary-color) rounded-lg  shadow-(--nav-shadow) absolute flex  transition-all opacity-0  group-hover:opacity-100  -top-96 p-4 left-0 group-hover:top-9 delay-250 ">
+              <div className="services-list w-[450px] h-auto bg-white/90 z-10 border border-(--border-color) text-(--primary-color) rounded-lg  shadow-(--nav-shadow) absolute flex  transition-all opacity-0  group-hover:opacity-100  -top-96 p-4 left-0 group-hover:top-9 delay-250 ">
                 <div className="w-1/2 h-auto flex-col items-start justify-between space-y-2  ">
                   <span className="w-full text-lg font-bold">Writing</span>
                   <ul className="w-full flex-col justify-between items-start text-sm font-normal">
